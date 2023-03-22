@@ -445,3 +445,163 @@ article {
     transform: scale(1.1);
 }
 
+footer {
+    display:flex;
+    align-items: center;
+    width: 100%;
+    height: 27em;
+    background: linear-gradient(183.41deg, #67c3f3 -8.57% , #5a98f2 82.96%) ;
+
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.footer-text-container{
+    flex: 2;
+}
+
+.footer-logo{
+    width: 1.5em;
+    height: auto;
+    display: inline-block;
+    background-color: #458ff6;
+    text-decoration: none;
+    border-radius: 100%;
+    font-size: 1.62em;
+    text-align: center;
+    font-weight: bold ;
+    color: #fff;
+    margin-right: 0.5em;
+}
+
+.footer-title{
+    font-size: 1.5em;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-desc{
+    font-size: 1.1em;
+    color: #fff;
+    line-height: 1.75rem;
+    margin-top: 1.37rem;
+
+}
+
+.footer-copyright{
+    font-size: 1em;
+    color: #fff;
+    line-height: 1.75rem;
+    margin-top: 1.93rem;
+}
+
+.footer-list{
+    flex: 1;
+    list-style: none;
+}
+
+.footer-list-title{
+    font-size: 1.25em;
+    margin: 10px  0;
+    font-weight: bold;
+    color: #fff;
+
+}
+.footer-link{
+    font-size: 1.12em;
+    color: #fff;
+    line-height: 3rem;
+    text-decoration: none;
+}
+
+.nav-scroll{
+    background-color: #458ff6;
+}
+
+.nav-logo-scroll{
+    background-color: #fff;
+    color: #458ff6;
+
+}
+
+.nav-title-scroll{
+    color: #fff;
+}
+
+.nav-link-scroll{
+    color: #fff;
+    opacity: 1;
+}
+
+.nav-link-scroll:hover{
+    color: #fff;
+    font-weight:bold ;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .navv-menu{
+        display: none;
+    }
+
+    .nav-icon{
+        display: block;
+        margin: auto 0;
+    }
+
+    .nav-icon-scroll{
+        color: #fff;
+    }
+
+    label .active,
+    label .cancel{
+        cursor: pointer;
+    }
+
+    label .active{
+        font-size: 20px;
+    }
+
+    label .cancel{
+        display: none;
+        font-size: 20px;
+    }
+
+    #check:checked ~ label .cancel{
+        display: block;
+    }
+
+    #check:checked ~ label .active{
+        display: none;
+    }
+
+    #check:checked ~ .nav-menu{
+        display: flex;
+        flex-direction: column;
+        background-color: #f1f6ff;
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 50px;
+        align-items: center;
+    }
+
+    .nav-item{
+        display: block;
+        text-align: center;
+        min-width: 90%;
+
+    }
+
+
+}
