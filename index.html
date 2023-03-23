@@ -5,14 +5,29 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        
+
+        
+    <!-- aos css file cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- magnific popup css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <!-- bootstrap cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
 
     </head>
     <body>
 <div class="container">
 
     <nav id ="nav">
-        <div class ="nav-container">
-            <div class ="nav-title-container">
+        <div class ="nav-container" >
+            <div class ="nav-title-container" >
                <a href="#"  class ="nav-logo">HCV</a> 
                <a href="#" class ="nav-title">HeCaVi</a>
             </div>
@@ -22,22 +37,30 @@
                 <i class="fa-solid fa-times cancel"></i>
             </label>
             <ul class="nav-menu">
-                <li class ="nav-item"><a href ="#" class ="nav-link">Home</a></li>
-                <li class ="nav-item"><a href ="#" class ="nav-link">Find a Doctor</a></li>
-                <li class ="nav-item"><a href ="#" class ="nav-link">Testimonial</a></li>
-                <li class ="nav-item"><a href ="#" class ="nav-link">Appointment</a></li>
-                <li class ="nav-item"><a href ="#" class ="nav-link">Apps</a></li>
-                <li class ="nav-item"><a href ="#" class ="nav-link">About us</a></li>
+                <li class ="nav-item"><a href ="#about" class ="nav-link">Home</a></li>
+                <li class ="nav-item"><a href ="#service" class ="nav-link">About</a></li>
+                <li class ="nav-item"><a href ="#desc" class ="nav-link">Doctors</a></li>
+                <li class ="nav-item"><a href ="#customer" class ="nav-link">Reviews</a></li>
+                
+                <li class ="nav-item"><a href ="#desc-container" class ="nav-link">Apps</a></li>
+                <li class ="nav-item"><a href ="#details" class ="nav-link">Contact</a></li>
+                <li class ="nav-item"><a href ="#Location" class ="nav-link">Location</a></li>
             </ul>
         </div>
     </nav>
+
+
+
+
+   
+
 
     <section class ="hero-section">
         <div class="hero-container">
             <div class="hero-text-container">
               <h1 class ="hero-title">Virtual HealthCare For YOU</h1> 
               <p class = "hero- Description">HCV Provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
-              <button class="hero-button">Consult Today</button>
+              <a href="Appointment.html"><button class="hero-button">Consult Today</button></a>
             </div>
             <div class ="hero-img-container">
               <img src="img/hero.png" alt="hero-img" class="hero-img" />  
@@ -46,7 +69,46 @@
 
     </section>
 
-    <class = "service">
+
+
+    <section class="about" id="about">
+
+        <div class="nav-link">
+        
+            <div class="row min-vh-100 align-items-center">
+        
+                <div class="col-md-6 content" >
+        
+                    <div class="box">
+                        <h3> <i class="fas fa-ambulance"></i> ambulance services </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, suscipit.</p>
+                    </div>
+        
+                    <div class="box">
+                        <h3> <i class="fas fa-procedures"></i> emergency rooms </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, suscipit.</p>
+                    </div>
+        
+                    <div class="box">
+                        <h3> <i class="fas fa-stethoscope"></i> free check-ups </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, suscipit.</p>
+                    </div>
+        
+                </div>
+        
+                <div class="col-md-6 d-none d-md-block" >
+                    <img src="img/clipart-doctor-lady-doctor-11.png" width="100%" alt="">
+                </div>
+
+                <a href="login.html"><button class="hero-button">Login For Our Service</button></a>
+        
+            </div>
+        
+        </div>
+        
+        </section>
+
+    <div class="service" id="service">
         <div class="service-container">
             <div class="service-text-container">
                 <h1 class ="service-title">Our Service</h1>
@@ -56,7 +118,7 @@
                     undergo treatment with our high qualified doctors you can consult with us which type of service is suitable for your health
                 </p>
             </div>
-            <div class="service-list-container" >
+            <div class="service-list-container">
 
                 <div class="service-list">
                     <img src="services/search-doctor.png" alt="service 1" class="service-list-img">
@@ -95,19 +157,26 @@
                 </div>
 
             </div>
-            <button class="service-button">Learn More</button>
+            <button class="service-button">Shop Now</button>
         </div>
-        <div class ="desc">
+
+
+        
+            
+
+
+
+        <div class ="desc" id="desc">
             <div class ="desc-container" >
                 <img src ="img/provider.png" alt="provider" class ="desc-img">
                 <div class="desc-text-container">
                     <h1 class = "desc-title">Leading Healthcare Providers</h1>
                     <hr class = "desc-line">
                     <p class = "desc-text"> HCV provides progressive, and affordable healthcare, accessible on online for everyone. To us, it's not just work. We take pride in the solutions we deliver</p>
-                    <button class="desc-button">Learn More</button>
+                   <a href="Doctor.html"> <button class="desc-button">Find Doctors</button></a>
                 </div>
             </div>
-            <div class="desc-container" style ="margin-top: 14.3em" >
+            <div class="desc-container" id="desc-container"style ="margin-top: 14.3em" >
                 <div class = "desc-text-container">
                     <h1 class ="desc-title">Download Our mobile app</h1>
                     <hr class="desc-line">
@@ -118,11 +187,11 @@
             </div>
         </div>
 
-        <div class = "testimonial">
-            <div class ="testimonial-container">
+        <div class = "testimonial" id="customer">
+            <div class ="testimonial-container" >
                 <h1 class ="testimonial-title"> What Our Customer Saying</h1>
                 <hr class ="testimonial-line">
-                <div class ="testimonial-content" >
+                <div class ="testimonial-content"  >
                     <div class="testimonial-avatar-container">
                         <img src ="img/customer.png" alt ="avatar" class ="testimonial-avatar">
                     </div>
@@ -132,12 +201,15 @@
                     </div>
                     <p class="testimonial-desc">“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”
                     </p>
+
             </div>
         </div>
+
     </div>
 
-    <article style ="margin-top: 13.5em;">
-        <div class ="article-container">
+
+    <article style ="margin-top: 13.5em;" >
+        <div class ="article-container" >
             <h1 class ="article-title">Check out our Latest article</h1>
             <hr class="article-line">
             <div class="article-content-container" >
@@ -182,8 +254,14 @@
         </div>
     </article>
 
+    
+           
+
+
+
+    
     <footer>
-        <div class="footer-container">
+        <div class="footer-container" id="details">
             <div class="footer-text-container">
                 <a href="#" class="footer-logo"></a>
                 <a href="#" class="footer-title">HCV</a>
@@ -194,7 +272,7 @@
             <ul class="footer-list">
                 <li><p class ="footer-list-title">Company</p></li>
                 <li><a href="#" class="footer-link">About</a></li>
-                <li><a href="#" class="footer-link">Testimonials</a></li>
+                <li><a href="#" class="footer-link">Reviews</a></li>
                 <li><a href="#" class="footer-link">Find a doctor </a></li>
                 <li><a href="#" class="footer-link">Apps</a></li>
             </ul>
@@ -214,11 +292,36 @@
                 <li><a href="#" class="footer-link">Instructions </a></li>
                 <li><a href="#" class="footer-link">How it work</a></li>
             </ul>
+        </div>
 
+        <div class = "footer-links" style="text-align: center;">
+            <br><br>
+                <a href = "#" class = "text-white flex"> <i class = "fab fa-facebook-f"></i></a>
+                <a href = "#" class = "text-white flex"> <i class = "fab fa-twitter"></i></a>
+                <a href = "#" class = "text-white flex"> <i class = "fab fa-linkedin"></i></a>
+            
         </div>
     </footer>
-
+    
 </div>
+
+
+
+<section id ="Location" class ="contact py">
+    <center><h2 style="background-color: #458ff6;">You Can Easily Reach Out to us </h2></center>
+    <div class = "Location grid">
+        <div class = "contact-left">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2384.6268289831164!2d-6.214682984112116!3d53.29621947996855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486709e0c9c80f8f%3A0x92f408d10f2277c2!2sREVO!5e0!3m2!1sen!2snp!4v1636264848776!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class = "contact-right text-white text-center bg-blue">
+            <div class = "contact-right">
+                  <a href="Appointment.html"><button class="hero-button">Consult Today</button></a>
+                  </div>
+                
+        
+        </div>
+
+        </section>
 
 
 
