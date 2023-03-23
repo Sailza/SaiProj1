@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Appointment form</title>
+ 
+    <style>
+    .contact{
+  background :#458ff6;
+}
+
+.contact .heading{
+  color:#fff;
+}
+
+.contact form{
+  text-align: center;
+}
+
+.contact form .inputBox{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .inputBox input, select{
+  height: 4rem;
+  width:49%;
+  padding:0 1rem;
+  margin:1rem 0;
+  font-size: 1.7rem;
+  color:var(--black);
+}
+
+.contact form textarea{
+  height:20rem;
+  resize: none;
+  padding:1rem;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.contact form input[type="submit"]{
+  width:20rem;
+}
+
+.contact form input[type="submit"]:hover{
+  background:var(--black);
+}
+    </style>
+    </head>
+<body>
+
+
+
+
+
+
+<section class="contact" id="contact">
+
+    <div class="container min-vh-100">
+
+        <div class="row justify-content-center">
+
+           <center> <h1 class="heading"><span>'</span> make an Appointment <span>'</span></h1></center>
+
+            <div class="col-md-10" >
+
+                <form action="index.html">
+
+                    <div class="inputBox">
+                        <input type="text" placeholder="full name">
+                        <input type="number" placeholder="phone">
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="email" placeholder="your email">
+                        <select name="" id="">
+                            <option value="" disabled selected>make an Appointment</option>
+                            <option value="09-11 am">09-11 am</option>
+                            <option value="11-03 pm">11-03 pm</option>
+                            <option value="03-06 pm">03-06 pm</option>
+                            <option value="06-09 pm">06-09 pm</option>
+                        </select>
+                    </div>
+
+                    <textarea name="" id="" cols="30" rows="10" placeholder="message ( optional )"></textarea>
+
+                  <a href="index.html"><button >make an appointment</button></a>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</body>
+
+</html>
