@@ -1,0 +1,139 @@
+
+
+#join-btn{
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-top:-50px;
+    margin-left:-100px;
+    font-size:18px;
+    padding:20px 40px;
+}
+
+#video-streams{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    height: 90vh;
+    width: 1400px;
+    margin:0 auto;
+}
+
+.video-container{
+    max-height: 100%;
+    border: 2px solid black;
+    background-color: #054b74;
+}
+
+.video-player{
+    height: 100%;
+    width: 100%;
+}
+
+#join-btn{
+    display: block;
+    margin: auto;
+    width: 12.5em;
+    height: 3.5em;
+    cursor: pointer;
+    border: 1px solid #458ff6;
+    border-radius: 2em;
+    color: #458ff6;
+    background-color: #fff;
+    transition-duration: 0.3s;
+    box-shadow: 0 0 15px rgba(69, 143, 246, 1);
+    transform: scale(1.1);
+
+}
+#leave-btn{
+  width: 12.5em;
+  height: 3.5em;
+  border-radius: 2em;
+  margin-top: 2.5em;
+  background-color: #458ff6;
+  color:#fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.3s;
+
+}
+
+#mic-btn{
+  width: 12.5em;
+  height: 3.5em;
+  border-radius: 2em;
+  margin-top: 2.5em;
+  background-color: #458ff6;
+  color:#fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.3s;
+
+}
+
+#camera-btn{
+  width: 12.5em;
+  height: 3.5em;
+  border-radius: 2em;
+  margin-top: 2.5em;
+  background-color: #458ff6;
+  color:#fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.3s;
+
+}
+
+#Chat-btn{
+  width: 12.5em;
+  height: 3.5em;
+  border-radius: 2em;
+  margin-top: 2.5em;
+  background-color: #458ff6;
+  color:#fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.3s;
+
+}
+
+
+#stream-controls{
+    display: none;
+    justify-content: center;
+    margin-top:0.5em;
+}
+
+@media screen and (max-width:1400px){
+    #video-streams{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        width: 95%;
+    }
+}
+
+
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: img src ="img/provider.png" alt="provider" class ="desc-img";
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: moveBackground 20s linear infinite;
+  }
+  
+  @keyframes moveBackground {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  
